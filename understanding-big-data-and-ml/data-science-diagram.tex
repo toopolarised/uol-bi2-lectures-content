@@ -1,0 +1,33 @@
+\documentclass[border=12pt]{standalone} 
+
+\usepackage{verbatim}
+
+\begin{comment}
+:Title: A Venn diagram with PDF blending
+:Tags: Diagrams;Cookbook
+:Author: Stefan Kottwitz
+:Slug: venn
+
+PDF blend mode requires TikZ version 3.0 or above.
+\end{comment}
+
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+
+  \begin{scope}[blend group = soft light]
+    \fill[red!50!white]   (90:2.0) circle (4);
+    \fill[green!50!white] (200:2.0) circle (4);
+    \fill[blue!50!white]  (340:2.0) circle (4);
+  \end{scope}
+  
+  \node at ( 155:2.7)    {\textbf{Software}};
+  \node at ( 200:-3.0)   {\textbf{ML}};
+  \node at ( 270:3.0)    {\textbf{Research}};
+  \node at ( 90:4.5)     {\textbf{Computer Science}};
+  \node at ( 205:4.3)    {\textbf{Domain Knowledge}};
+  \node at ( 335:4.2)    {\textbf{Math and Statistics}};
+  \node [font=\Large] 	 {\textbf{Magic}};
+  
+\end{tikzpicture}
+\end{document}

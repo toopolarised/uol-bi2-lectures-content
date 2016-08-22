@@ -1,0 +1,36 @@
+\documentclass[12pt]{standalone}
+\usepackage{varwidth}
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath, amssymb, graphics, setspace}
+%\newcommand{\mathsym}[1]{{}}
+%\newcommand{\unicode}[1]{{}}
+%\newcounter{mathematicapage}
+
+\usepackage{color}
+
+\newcommand*{\mathcolor}{}
+\def\mathcolor#1#{\mathcoloraux{#1}}
+\newcommand*{\mathcoloraux}[3]{%
+	\protect\leavevmode
+	\begingroup
+	\color#1{#2}#3%
+	\endgroup
+}
+
+\begin{document}
+	\begin{varwidth}{50in}
+		\begin{equation*}
+		h(\mathbf{x}) = \textcolor{blue}{a}\mathbf{x} + \textcolor{blue}{b}
+%		$$ Y = \alpha X + \beta $$ 
+%		$$ Y = \beta_1 X + \beta_0$$
+		% \newline 
+% 		$$ Y = a * X + b$$
+		\end{equation*}
+	\end{varwidth}
+	
+\vspace{2cm}
+
+\end{document}
