@@ -8,7 +8,6 @@
  ![](./data-science-diagram.png)  
  ![](./linear-equation-alone-as-hypothesis.png)  
  ![](./linear-equation-alone.png)  
- ![](./linear-equation-plot.png)  
  ![](./linear-equation.png)  
  ![](./linear-equations-plot.png)  
  ![](./mse.png)  
